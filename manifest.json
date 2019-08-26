@@ -1,0 +1,12 @@
+{
+  "name": "小羊右键搜索",
+  "version": "1.0",
+  "description": "chrome浏览器快速对选中文本，通过第三方网站进行搜索",
+  "manifest_version": 2,
+  "icons": {
+    "16": "icon.png",
+    "32": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  }
+}
