@@ -8,5 +8,14 @@
     "32": "icon.png",
     "48": "icon.png",
     "128": "icon.png"
-  }
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["index.js"]
+    }
+  ],
+  "permissions": [
+    "contextMenus"
+  ]
 }
