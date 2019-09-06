@@ -1,7 +1,7 @@
 {
-  "name": "小羊右键搜索",
+  "name": "小羊搜索",
   "version": "1.0",
-  "description": "chrome浏览器快速对选中文本，通过第三方网站进行搜索",
+  "description": "chrome浏览器快速对选中文本，通过第三方网站进行搜索，并打开tab",
   "manifest_version": 2,
   "icons": {
     "16": "icon.png",
@@ -9,13 +9,8 @@
     "48": "icon.png",
     "128": "icon.png"
   },
-  "content_scripts": [
-    {
-      "matches": ["<all_urls>"],
-      "js": ["index.js"]
-    }
-  ],
-  "permissions": [
-    "contextMenus"
-  ]
+  "background": {
+    "scripts": ["index.js"]
+  },
+  "permissions": ["contextMenus", "tabs"]
 }
